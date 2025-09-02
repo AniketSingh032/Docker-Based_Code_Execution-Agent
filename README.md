@@ -82,6 +82,24 @@ pip install poetry
 poetry install
 ```
 
+* Set up environment variables by creating a `.env` file in the root directory:
+```bash
+GROQ_API_KEY=your_groq_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+```
+
+### Running
+
+* **Start the LangGraph development server:**
+```bash
+langgraph dev
+```
+
+* **Verify Docker is Running:**
+  - Before starting the application, ensure Docker is installed and running
+  - Test Docker availability: `docker info`
+  - The system will automatically create user-specific containers when needed
+
 ## Technical Details
 
 ### Container Management
